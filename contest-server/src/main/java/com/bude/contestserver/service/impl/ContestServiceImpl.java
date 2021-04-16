@@ -240,7 +240,7 @@ public class ContestServiceImpl implements ContestService {
         if (entity.isPresent()) {
             return new Result<>(entity.get().getName());
         } else {
-            return new Result<>(false, null, Map.of("data", "no found"));
+            return new Result<>(false, "查询失败", Map.of("data", "no found"));
         }
     }
 

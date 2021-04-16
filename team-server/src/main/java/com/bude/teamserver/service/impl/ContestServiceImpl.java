@@ -46,10 +46,7 @@ public class ContestServiceImpl implements ContestService {
                 result.getInfo().put(String.valueOf(entity.getTid()), "no found");
             }
         }
-        if (teams.isEmpty()) {
-            result.setState(false);
-            result.setData(null);
-        }
+
         List<TeamForList> lists = new ArrayList<>();
         for(TeamEntity entity: teams) {
             TeamForList tl = new TeamForList();

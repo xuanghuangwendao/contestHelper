@@ -25,9 +25,6 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public Result<List<PostItem>> getItemList(int postId) {
         List<PostItemEntity> list = postItemRepository.findAllByPidEquals(postId);
-        if (list.isEmpty()) {
-            return new Result<>(false, null, Map.of("data", "no found"));
-        }
         List<PostItem> items = new ArrayList<>();
         int num = 1;
         for (PostItemEntity entity: list) {

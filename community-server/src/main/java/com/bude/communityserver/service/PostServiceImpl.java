@@ -70,9 +70,7 @@ public class PostServiceImpl implements PostService {
     @Override
     public Result<List<PostForList>> getAllPost() {
         List<PostEntity> entityList = (List<PostEntity>) postRepository.findAll();
-        if (entityList.isEmpty()) {
-            return new Result<>(false, null, Map.of("data", "no found"));
-        }
+
         List<PostForList> list = new ArrayList<>();
         for (PostEntity entity: entityList) {
             PostForList item = new PostForList();
@@ -89,9 +87,7 @@ public class PostServiceImpl implements PostService {
     @Override
     public Result<List<PostForList>> searchByName(String name) {
         List<PostEntity> entityList = (List<PostEntity>) postRepository.findAllByTitleLike("%" + name + "%");
-        if (entityList.isEmpty()) {
-            return new Result<>(false, null, Map.of("data", "no found"));
-        }
+
         List<PostForList> list = new ArrayList<>();
         for (PostEntity entity: entityList) {
             PostForList item = new PostForList();
