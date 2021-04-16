@@ -10,6 +10,7 @@
 	</parent>
 	<artifactId>contest-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>contest-server</name>
 	<description>contest server</description>
 	<properties>

@@ -12,6 +12,7 @@
 	<artifactId>utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>utils</name>
+	<packaging>war</packaging>
 	<description>contest helps utils</description>
 	<properties>
 		<java.version>11</java.version>

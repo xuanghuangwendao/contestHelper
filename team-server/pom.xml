@@ -11,6 +11,7 @@
 	<artifactId>team-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>team-server</name>
+	<packaging>war</packaging>
 	<description>team server</description>
 	<properties>
 		<java.version>11</java.version>
