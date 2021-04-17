@@ -5,14 +5,14 @@ import com.alibaba.fastjson.JSON;
 import com.bude.userserver.entity.MessageEntity;
 import com.bude.userserver.entity.UserEntity;
 import com.bude.userserver.service.*;
-import com.bude.utils.model.Message;
+import com.bude.userserver.result.Result;
+import com.bude.userserver.model.*;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.bude.utils.result.Result;
 
 import java.sql.Timestamp;
 import java.util.Map;

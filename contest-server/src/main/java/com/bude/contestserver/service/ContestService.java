@@ -1,9 +1,8 @@
 package com.bude.contestserver.service;
 
 import com.bude.contestserver.entity.ContestEntity;
-import com.bude.utils.model.ContestForList;
-import com.bude.utils.model.ContestForPage;
-import com.bude.utils.result.Result;
+import com.bude.contestserver.result.Result;
+import com.bude.contestserver.model.*;
 
 import java.util.List;
 

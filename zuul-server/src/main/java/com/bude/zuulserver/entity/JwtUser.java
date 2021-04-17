@@ -1,6 +1,6 @@
 package com.bude.zuulserver.entity;
 
-import com.bude.utils.model.Login;
+import com.bude.zuulserver.model.Login;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

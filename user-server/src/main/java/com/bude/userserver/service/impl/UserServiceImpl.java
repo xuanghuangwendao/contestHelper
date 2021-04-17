@@ -4,11 +4,10 @@ import com.bude.userserver.entity.UserEntity;
 import com.bude.userserver.repository.UserRepository;
 import com.bude.userserver.service.FriendService;
 import com.bude.userserver.service.UserService;
-import com.bude.utils.model.UserForList;
-import com.bude.utils.model.UserForPage;
+import com.bude.userserver.result.Result;
+import com.bude.userserver.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.bude.utils.result.Result;
 
 import java.util.*;
 

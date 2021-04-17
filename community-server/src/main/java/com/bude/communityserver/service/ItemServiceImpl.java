@@ -2,8 +2,8 @@ package com.bude.communityserver.service;
 
 import com.bude.communityserver.entity.PostItemEntity;
 import com.bude.communityserver.repository.PostItemRepository;
-import com.bude.utils.model.PostItem;
-import com.bude.utils.result.Result;
+import com.bude.communityserver.result.Result;
+import com.bude.communityserver.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -5,8 +5,8 @@ import com.bude.contestserver.entity.NewsEntity;
 import com.bude.contestserver.repository.ContestNewsRepository;
 import com.bude.contestserver.repository.NewsRepository;
 import com.bude.contestserver.service.NewsService;
-import com.bude.utils.model.NewsForList;
-import com.bude.utils.result.Result;
+import com.bude.contestserver.result.Result;
+import com.bude.contestserver.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

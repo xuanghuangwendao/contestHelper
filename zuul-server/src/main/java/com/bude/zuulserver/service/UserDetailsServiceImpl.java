@@ -1,6 +1,6 @@
 package com.bude.zuulserver.service;
 
-import com.bude.utils.model.Login;
+import com.bude.zuulserver.model.Login;
 import com.bude.zuulserver.entity.JwtUser;
 import com.bude.zuulserver.entity.LoginEntity;
 import com.bude.zuulserver.repository.LoginRepository;

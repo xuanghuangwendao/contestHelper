@@ -1,11 +1,7 @@
 package com.bude.collectengine.collect;
 
 import com.bude.collectengine.entity.ContestNewsEntity;
-import com.bude.collectengine.entity.NewsEntity;
-import com.bude.collectengine.repository.ContestNewsRepository;
-import com.bude.collectengine.repository.NewsRepository;
 import com.bude.collectengine.utils.NewsUtil;
-import com.bude.utils.model.NewsForList;
 import lombok.extern.log4j.Log4j2;
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;

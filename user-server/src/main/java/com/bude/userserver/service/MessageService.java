@@ -1,9 +1,8 @@
 package com.bude.userserver.service;
 
 import com.bude.userserver.entity.MessageEntity;
-import com.bude.utils.model.Message;
-import com.bude.utils.result.Result;
-
+import com.bude.userserver.result.Result;
+import com.bude.userserver.model.*;
 import java.util.List;
 
 public interface MessageService {

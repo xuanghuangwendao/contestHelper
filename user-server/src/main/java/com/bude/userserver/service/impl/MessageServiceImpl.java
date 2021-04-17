@@ -4,8 +4,8 @@ import com.bude.userserver.entity.MessageEntity;
 import com.bude.userserver.repository.MessageRepository;
 import com.bude.userserver.service.MessageService;
 import com.bude.userserver.service.UserService;
-import com.bude.utils.model.Message;
-import com.bude.utils.result.Result;
+import com.bude.userserver.result.Result;
+import com.bude.userserver.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

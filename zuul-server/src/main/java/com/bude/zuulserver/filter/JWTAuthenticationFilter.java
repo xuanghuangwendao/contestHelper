@@ -1,7 +1,7 @@
 package com.bude.zuulserver.filter;
 
 import com.alibaba.fastjson.JSON;
-import com.bude.utils.model.Login;
+import com.bude.zuulserver.model.Login;
 import com.bude.zuulserver.service.UserFeign;
 import com.bude.zuulserver.utils.JwtTokenUtils;
 import com.bude.zuulserver.model.LoginUser;

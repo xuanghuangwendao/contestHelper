@@ -35,11 +35,6 @@
 			</exclusions>
 		</dependency>
 
-		<dependency>
-			<groupId>com.bude</groupId>
-			<artifactId>utils</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 
 	</dependencies>
 	<dependencyManagement>

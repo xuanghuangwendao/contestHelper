@@ -7,11 +7,10 @@ import com.bude.userserver.repository.TeamUserRepository;
 import com.bude.userserver.repository.UserRepository;
 import com.bude.userserver.service.FriendService;
 import com.bude.userserver.service.TeamMemberService;
-import com.bude.utils.model.UserForList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.bude.utils.result.Result;
-
+import com.bude.userserver.result.Result;
+import com.bude.userserver.model.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

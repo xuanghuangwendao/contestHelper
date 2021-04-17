@@ -11,10 +11,8 @@ import com.bude.teamserver.repository.TeamUserRepository;
 import com.bude.teamserver.service.ContestFeign;
 import com.bude.teamserver.service.TeamService;
 import com.bude.teamserver.service.UserFeign;
-import com.bude.utils.model.TeamForList;
-import com.bude.utils.model.TeamForPage;
-import com.bude.utils.model.UserForList;
-import com.bude.utils.result.Result;
+import com.bude.teamserver.result.Result;
+import com.bude.teamserver.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
