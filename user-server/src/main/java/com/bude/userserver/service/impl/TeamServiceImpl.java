@@ -1,32 +1,34 @@
-package com.bude.teamserver.service.impl;
+package com.bude.userserver.service.impl;
 
-import com.alibaba.fastjson.JSON;
-import com.bude.teamserver.entity.ContestTeamEntity;
-import com.bude.teamserver.entity.TeamEntity;
-import com.bude.teamserver.entity.TeamUserEntity;
-import com.bude.teamserver.entity.TeamUserEntityPK;
-import com.bude.teamserver.repository.ContestTeamRepository;
-import com.bude.teamserver.repository.TeamRepository;
-import com.bude.teamserver.repository.TeamUserRepository;
-import com.bude.teamserver.service.ContestFeign;
-import com.bude.teamserver.service.TeamService;
-import com.bude.teamserver.service.UserFeign;
-import com.bude.teamserver.result.Result;
-import com.bude.teamserver.model.*;
+import com.bude.userserver.entity.ContestTeamEntity;
+import com.bude.userserver.entity.TeamEntity;
+import com.bude.userserver.entity.TeamUserEntity;
+import com.bude.userserver.entity.TeamUserEntityPK;
+import com.bude.userserver.model.TeamForList;
+import com.bude.userserver.model.TeamForPage;
+import com.bude.userserver.repository.ContestTeamRepository;
+import com.bude.userserver.repository.TeamRepository;
+import com.bude.userserver.repository.TeamUserRepository;
+import com.bude.userserver.result.Result;
+import com.bude.userserver.service.ContestFeign;
+import com.bude.userserver.service.TeamService;
+import com.bude.userserver.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
 @Service
 public class TeamServiceImpl implements TeamService {
 
     @Autowired
     TeamRepository teamRepository;
 
+
     @Autowired
-    UserFeign userFeign;
+    UserService userService;
 
     @Autowired
     ContestFeign contestFeign;
@@ -53,7 +55,7 @@ public class TeamServiceImpl implements TeamService {
             page.setSign(team.get().getSign());
             page.setLeaderId(team.get().getLeader());
             page.setContestId(team.get().getContest());
-            page.setLeaderName(userFeign.getName(page.getLeaderId()));
+            page.setLeaderName(userService.getName(page.getLeaderId()).data);
             page.setContestName(contestFeign.getName(team.get().getContest()));
             page.setTag(team.get().getTag());
             page.setCheck(checkMember(teamId, myId));
@@ -89,7 +91,7 @@ public class TeamServiceImpl implements TeamService {
                 tl.setId(entity.getId());
                 tl.setName(entity.getName());
                 tl.setTag(entity.getTag());
-                tl.setLeaderName(userFeign.getName(entity.getLeader()));
+                tl.setLeaderName(userService.getName(entity.getLeader()).data);
                 tl.setFollow(checkMember(entity.getId(), myId));
                 lists.add(tl);
             }
@@ -156,7 +158,7 @@ public class TeamServiceImpl implements TeamService {
             tl.setId(entity.getId());
             tl.setName(entity.getName());
             tl.setTag(entity.getTag());
-            tl.setLeaderName(userFeign.getName(entity.getLeader()));
+            tl.setLeaderName(userService.getName(entity.getLeader()).data);
             tl.setFollow(checkMember(entity.getId(), myId));
             lists.add(tl);
         }
@@ -190,7 +192,7 @@ public class TeamServiceImpl implements TeamService {
             tl.setId(entity.getId());
             tl.setName(entity.getName());
             tl.setTag(entity.getTag());
-            tl.setLeaderName(userFeign.getName(entity.getLeader()));
+            tl.setLeaderName(userService.getName(entity.getLeader()).data);
             tl.setFollow(checkMember(entity.getId(), myId));
             lists.add(tl);
         }

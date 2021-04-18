@@ -1,12 +1,11 @@
-package com.bude.teamserver.service;
-
+package com.bude.userserver.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient("user-server")
-public interface UserFeign {
+@FeignClient("contest-server")
+public interface ContestFeign {
     @PostMapping("/getName")
-    String getName(@RequestParam Integer userId);
+    String getName(@RequestParam Integer contestId);
 }

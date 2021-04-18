@@ -9,4 +9,6 @@ import java.util.List;
 public interface TeamUserRepository extends CrudRepository<TeamUserEntity, TeamUserEntityPK> {
 
     List<TeamUserEntity> findAllByTidEquals(int tid);
+
+    List<TeamUserEntity> findAllByUidEquals(int uid);
 }
