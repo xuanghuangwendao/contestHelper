@@ -131,6 +131,7 @@ public class UserController {
             String grade = body.get("grade");
             String major = body.get("major");
             String introduction = body.get("introduction");
+            String image = body.get("image");
             String tag = body.get("tag");
             if (id <= 0) {
                 return Result.ParamError();
@@ -144,6 +145,7 @@ public class UserController {
             user.setMajor(major);
             user.setIntroduction(introduction);
             user.setTag(tag);
+            user.setImage(image);
 
             Result<Boolean> result = userService.register(user);
             log.info(result.toString());

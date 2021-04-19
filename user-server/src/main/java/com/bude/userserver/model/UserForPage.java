@@ -8,6 +8,8 @@ public class UserForPage {
 
     private int id;
 
+    private String image;
+
     private String displayName;
 
     private String sign;

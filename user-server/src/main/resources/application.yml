@@ -5,7 +5,7 @@ spring:
   application:
     name: user-server
   datasource:
-    url: jdbc:mysql://localhost:3306/contesthelper
+    url: jdbc:mysql://localhost:3306/contesthelper?characterEncoding=utf-8
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -18,10 +18,11 @@ spring:
 eureka:
   instance:
     prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    instance-id: 119.3.157.136:${server.port}
+    ip-address: 119.3.157.136
   client:
     serviceUrl:
-      defaultZone: http://root:123456@localhost:8761/eureka/
+      defaultZone: http://root:123456@39.106.62.146:8761/eureka/
 
 
 

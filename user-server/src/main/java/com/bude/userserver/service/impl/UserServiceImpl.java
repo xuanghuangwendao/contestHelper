@@ -41,6 +41,7 @@ public class UserServiceImpl implements UserService {
             page.setMajor(user.get().getMajor());
             page.setGrade(user.get().getGrade());
             page.setGrade(user.get().getGrade());
+            page.setImage(user.get().getImage());
             page.setTag(user.get().getTag());
             page.setFriend(friendService.checkFriend(id, me).data);
             page.setIntroduction(user.get().getIntroduction());

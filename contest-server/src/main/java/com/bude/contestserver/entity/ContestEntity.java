@@ -15,6 +15,7 @@ public class ContestEntity {
     private String level;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     public Integer getId() {
         return id;
