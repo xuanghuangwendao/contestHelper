@@ -9,7 +9,7 @@ spring:
       name: root
       password: 123456
   datasource:
-    url: jdbc:mysql://localhost:3306/contesthelper
+    url: jdbc:mysql://localhost:3306/contesthelper?characterEncoding=utf-8
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
